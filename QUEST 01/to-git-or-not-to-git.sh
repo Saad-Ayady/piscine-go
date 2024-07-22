@@ -1,0 +1,1 @@
+curl -s superhero --data '{"query":"{user(where:{login:{_eq:\"alibi.bagdatov\"}}){id}}"}' | jq '.data.user' | jq .[] | jq .[]
